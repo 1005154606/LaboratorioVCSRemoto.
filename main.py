@@ -1,8 +1,14 @@
-print("segundo ejercicio")
-b=int(input("Introduce el primer número: "))
-cuadrado_b=b**2
-print("El cuadrado de", b , "es" ,cuadrado_b)
+print("Tercer ejercicio")
 import math
-d=int(input("Ingrese el segundo número: "))
-raiz_d=math.sqrt(d)
-print("la raiz cuadrada de", d ,"es", raiz_d)
+a=float(input("Introduce el valor de a: "))
+b=float(input("Introduce el valor de b: "))
+c=float(input("Introduce el valor de c: "))
+
+d=b**2-4*a*c
+if d<0:
+	print("No existe solución en los reales")
+else:
+	x1=(-b+math.sqrt(d))/(2*a)
+	x2=(-b-math.sqrt(d))/(2*a)
+	print("Solución x1 es", x1)
+	print("Solución x2 es", x2)
